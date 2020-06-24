@@ -3,7 +3,7 @@
 Платформа Windows 10 Home v.2004
 
 1) Установить docker desktop [здесь](https://www.docker.com/get-started) и ввести в терминале `docker pull ubuntu` и `docker pull postgres`.
-Для запуска образа нужно создать контейнер и запустить его, для этого можно либо ввести такую команду `winpty docker run -it <image_name>` либо такие `docker container create --name my_container <image_name>` `winpty docker container start -it <name_container>`. Команда run - сразу создает и запускает контейнер, во втором случае эти действия разделены, --name - необязательная опция которая задает имя контейнеру, иначе имя будет задано автоматически, -it - это 2 опции --interactive и --tty, дает возможность сразу после запуска давать команды контейнеру.
+Для запуска образа нужно создать контейнер и запустить его, для этого можно либо ввести такую команду `winpty docker run -it <image_name>` либо такие `docker container create --name my_container <image_name>` `winpty docker container start -it <name_container> bash`. Команда run - сразу создает и запускает контейнер, во втором случае эти действия разделены, --name - необязательная опция которая задает имя контейнеру, иначе имя будет задано автоматически, -it - это 2 опции --interactive и --tty, дает возможность сразу после запуска давать команды контейнеру.
 
 2) 
    - Создаем Dockerfile, он лежит в папке docker с комментариями.
